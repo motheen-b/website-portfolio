@@ -1,7 +1,22 @@
 <template>
     <div class="hero-content">
         <div class="hero-content-items">
-            
+            <div class="social-items">
+                <div class="item">
+                    <img src="../assets/github.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../assets/linked-in.svg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../assets/instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="resume-button">
+
+            </div>
+        </div>
         </div>
     </div>
 </template>
@@ -72,6 +87,43 @@ export default {
         display: flex;
         flex-basis: 100%;
         height: 50px;
+        padding: 25px;
         border: 2px solid green;
+    }
+    .social-items {
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        border: 1px solid white;
+    }
+    .item {
+        width: 50px;
+        height: 50px;
+    }
+    .item:hover {
+        cursor: pointer;
+        transform: translateY(5px);
+    }
+    .item img {
+        width: 50px;
+        height: 50px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 100%;
+        border: 1px solid white;
+    }
+    .resume-button {
+        align-self: center;
+        background-color: #FEB132;
+        width: 138px;
+        height: 54px;
+        border-radius: 15px;
+        border: 1px solid #F05B23;
+    }
+    .resume-button:hover {
+        cursor: pointer;
+        background-color: #f69f13;
     }
 </style>
