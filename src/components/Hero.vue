@@ -126,4 +126,10 @@ export default {
         cursor: pointer;
         background-color: #f69f13;
     }
+    @media (min-width: 320px) and (max-width: 768px) {
+        .hero-content-items {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 </style>
