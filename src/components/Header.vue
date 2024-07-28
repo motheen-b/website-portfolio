@@ -1,19 +1,13 @@
 <template>
-    <div>
-        <div class="header-container">
-            <div class="header-items">
-                <div class="svg-icon">
-                    <img src="../assets/phone-img.svg" alt="">
-                </div>
-                <div class="item">
-                    +1 (647)-901-7565
-                </div>
-                <div class="svg-icon">
-                    <img src="../assets/email-img.svg" alt="">
-                </div>
-                <div class="item">
-                    motheenbaig@gmail.com
-                </div>
+    <div class="header-container">
+        <div class="header-items">
+            <div class="item">
+                <img src="../assets/phone-img.svg" alt="">
+                +1 (647)-901-7565
+            </div>
+            <div class="item">
+                <img src="../assets/email-img.svg" alt="">
+                motheenbaig@gmail.com
             </div>
         </div>
     </div>
@@ -28,33 +22,49 @@ export default {
 <style scoped>
     .header-container {
         display: flex;
-        justify-content: flex-end;
+        flex-basis: 100%;
+        align-items: center;
         height: 50px;
-        font-family: 'Inter', sans-serif;
-        /* background: linear-gradient(to right, #a29f9f, #09192E); */
+        padding-right: 25px;
         background: linear-gradient(to right, #F05C23, #8A3514);
+        /* border: 2px solid black; */
     }
     .header-items {
         display: flex;
-        align-items: center;
-        margin: 10px;
+        justify-content: flex-end;
+        flex-basis: 100%;
+        /* border: 2px solid green; */
     }
     .item {
+        display: flex;
+        align-items: center;
         color: white;
+        margin-left: 10px;
+        text-shadow: 0px 4px 8px #000000;
     }
     .item:hover {
         cursor: pointer;
         text-decoration: underline;
     }
-    .svg-icon {
-        margin-top: 2px;
-        margin-left: 10px;
-        margin-right: 4px;
-        height: 30px;
+    .item-img {
         width: 30px;
-    }
-    .svg-icon img {
         height: 30px;
-        width: auto;
+    }
+    .item img {
+        /* display: flex; */
+        width: 30px;
+        height: 30px;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+        .header-container {
+            height: 70px;
+            padding-right: 0px;
+        }
+        .header-items {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 </style>
