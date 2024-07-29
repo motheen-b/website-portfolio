@@ -19,7 +19,9 @@
         </div>
         </div>
         <div class="hero-body-content">
-            safsdf
+            <div class="info-text">
+                <div class="auto-text">#I build {{ displayedText }}</div>
+            </div>
         </div>
     </div>
 </template>
@@ -32,7 +34,7 @@ export default {
                 'Web3 applications.', 
                 'automation solutions.', 
                 "RESTful API's.",
-                'machine learning models.',
+                'ML models.',
                 'data analytics solutions.'
             ],
             selectedMessageIndex: 0,
@@ -81,6 +83,11 @@ export default {
 
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
+    .auto-text {
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+    }
     .hero-content {
         font-family: 'Inter', sans-serif;
         display: flex;
@@ -101,9 +108,20 @@ export default {
         align-items: center;
         justify-content: center;
         height: 100%;
-        padding: 50px 50px;
-        border: 2px solid white;
+        /* padding: 50px 50px; */
+        /* border: 2px solid white; */
     }
+
+    .info-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 25px;
+        height: 100px;
+        flex-basis: 100%;
+        /* border: 2px solid blue; */
+    }
+
 
     .social-items {
         display: flex;
@@ -152,6 +170,9 @@ export default {
         }
         .buttons {
             padding: 15px;
+        }
+        .hero-content {
+            height: 750px;
         }
     }
 </style>
