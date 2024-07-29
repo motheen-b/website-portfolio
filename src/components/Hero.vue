@@ -1,27 +1,28 @@
 <template>
     <div class="hero-content">
         <div class="top-bar">
-            <div class="social-items">
-                <div class="item">
+            <div class="social-content">
+                <div class="social-item">
                     <img src="../assets/github.svg" alt="">
                 </div>
-                <div class="item">
+                <div class="social-item">
                     <img src="../assets/linked-in.svg" alt="">
                 </div>
-                <div class="item">
+                <div class="social-item">
                     <img src="../assets/instagram.svg" alt="">
                 </div>
             </div>
-            <div class="buttons">
-                <div class="resume-button">
+            <div class="button-content">
+                <div class="button">
                     Resume
+                </div>
             </div>
         </div>
-        </div>
-        <div class="hero-body-content">
-            <div class="info-text">
-                <div class="auto-text">#I build {{ displayedText }}</div>
-            </div>
+        <div class="text-content">
+            <h1>Hi my name is,</h1>
+            <h2>Motheen Baig</h2>
+            <h3>{{ displayedText }}‎ </h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis quisquam qui molesti</h4>
         </div>
     </div>
 </template>
@@ -83,96 +84,95 @@ export default {
 
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
-    .auto-text {
-        font-size: 30px;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
-    }
     .hero-content {
-        font-family: 'Inter', sans-serif;
         display: flex;
         flex-direction: column;
+        flex-basis: 100%;
         height: 922px;
         background-image: url('../assets/hero-background.svg');
         border: 2px solid black;
     }
     .top-bar {
         display: flex;
-        height: 50px;
         padding: 25px;
         border: 2px solid green;
     }
-
-    .hero-body-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        /* padding: 50px 50px; */
-        /* border: 2px solid white; */
-    }
-
-    .info-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 25px;
-        height: 100px;
-        flex-basis: 100%;
-        /* border: 2px solid blue; */
-    }
-
-
-    .social-items {
+    .social-content {
         display: flex;
         width: 200px;
         justify-content: space-between;
+        border: 2px solid black;
     }
-    .item {
+    .social-item {
         width: 50px;
         height: 50px;
     }
-    .item:hover {
+    .social-item img {
+        width: 50px;
+        height: 50px;
+    }
+    .social-item:hover {
         cursor: pointer;
-        transform: translateY(5px);
+        transform: translateY(10px);
     }
-    .item img {
-        width: 50px;
-        height: 50px;
-    }
-    .buttons {
+    .button-content {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
         flex-basis: 100%;
+        justify-content: flex-end;
+        border: 2px solid white;
     }
-    .resume-button {
+    .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #FEB132;
+        align-self: center;
         width: 138px;
         height: 54px;
         border-radius: 15px;
-        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+        background-color: #FEB132;
         border: 1px solid #F05B23;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
-    .resume-button:hover {
+    .button:hover {
         cursor: pointer;
-        background-color: #f69f13;
+        background-color: #f4c818;
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+        height: 922px;
+        border: 2px solid white;
+    }
+    h1 {
+        color: rgb(20, 228, 20);
+        text-shadow: 0px 4px 8px #000000;
+    }
+    h2 {
+        color: white;
+        text-shadow: 0px 4px 8px #000000;
+    }
+    h3 {
+        color: rgb(216, 210, 210);
+        text-shadow: 0px 4px 8px #000000;
+    }
+    h4 {
+        color: white;
+        text-shadow: 0px 4px 8px #000000;
     }
     @media (min-width: 320px) and (max-width: 768px) {
+        .hero-content {
+            height: 461px;
+        }
         .top-bar {
+            padding: 15px;
             flex-direction: column;
             align-items: center;
-            height: 100px;
         }
-        .buttons {
-            padding: 15px;
-        }
-        .hero-content {
-            height: 750px;
-        }
+        /* .text-content {
+            justify-content: center;
+        } */
     }
 </style>
