@@ -164,7 +164,7 @@ export default {
     }
     @media (min-width: 320px) and (max-width: 768px) {
         .hero-content {
-            height: 461px;
+            height: 561px;
         }
         .top-bar {
             padding: 15px;
