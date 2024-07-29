@@ -95,13 +95,15 @@ export default {
     .top-bar {
         display: flex;
         padding: 25px;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
     .social-content {
         display: flex;
+        align-items: center;
+        /* padding-top: 2px; */
         width: 200px;
         justify-content: space-between;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
     .social-item {
         width: 50px;
@@ -119,7 +121,7 @@ export default {
         display: flex;
         flex-basis: 100%;
         justify-content: flex-end;
-        border: 2px solid white;
+        /* border: 2px solid white; */
     }
     .button {
         display: flex;
@@ -131,6 +133,7 @@ export default {
         border-radius: 15px;
         background-color: #FEB132;
         border: 1px solid #F05B23;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
     .button:hover {
         cursor: pointer;
@@ -139,26 +142,34 @@ export default {
     .text-content {
         display: flex;
         flex-direction: column;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        justify-content: center;
         margin: 25px;
         padding: 25px;
-        align-items: center;
-        justify-content: center;
         height: 922px;
-        border: 2px solid white;
+        /* border: 2px solid white; */
     }
     h1 {
+        font-size: 22px;
         color: rgb(20, 228, 20);
         text-shadow: 0px 4px 8px #000000;
+        padding-bottom: 10px;
     }
     h2 {
+        font-size: 36px;
         color: white;
         text-shadow: 0px 4px 8px #000000;
+        padding-bottom: 10px;
     }
     h3 {
-        color: rgb(216, 210, 210);
+        font-size: 36px;
+        color: rgb(234, 225, 225);
         text-shadow: 0px 4px 8px #000000;
+        padding-bottom: 10px;
     }
     h4 {
+        font-size: 22px;
         color: white;
         text-shadow: 0px 4px 8px #000000;
     }
@@ -171,8 +182,17 @@ export default {
             flex-direction: column;
             align-items: center;
         }
-        /* .text-content {
-            justify-content: center;
-        } */
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 32px;
+        }
+        h4 {
+            font-size: 20px;
+        }
     }
 </style>
