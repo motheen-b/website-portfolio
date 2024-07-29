@@ -1,6 +1,6 @@
 <template>
     <div class="hero-content">
-        <div class="hero-content-items">
+        <div class="top-bar">
             <div class="social-items">
                 <div class="item">
                     <img src="../assets/github.svg" alt="">
@@ -14,9 +14,12 @@
             </div>
             <div class="buttons">
                 <div class="resume-button">
-
+                    Resume
             </div>
         </div>
+        </div>
+        <div class="hero-body-content">
+            safsdf
         </div>
     </div>
 </template>
@@ -77,24 +80,35 @@ export default {
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
     .hero-content {
+        font-family: 'Inter', sans-serif;
         display: flex;
+        flex-direction: column;
         height: 922px;
         background-image: url('../assets/hero-background.svg');
         border: 2px solid black;
     }
-    .hero-content-items {
+    .top-bar {
         display: flex;
-        flex-basis: 100%;
         height: 50px;
         padding: 25px;
         border: 2px solid green;
     }
+
+    .hero-body-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 50px 50px;
+        border: 2px solid white;
+    }
+
     .social-items {
         display: flex;
         width: 200px;
         justify-content: space-between;
-        border: 1px solid white;
     }
     .item {
         width: 50px;
@@ -111,25 +125,33 @@ export default {
     .buttons {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         flex-basis: 100%;
-        border: 1px solid white;
     }
     .resume-button {
-        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #FEB132;
         width: 138px;
         height: 54px;
         border-radius: 15px;
+        text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
         border: 1px solid #F05B23;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
     .resume-button:hover {
         cursor: pointer;
         background-color: #f69f13;
     }
     @media (min-width: 320px) and (max-width: 768px) {
-        .hero-content-items {
+        .top-bar {
             flex-direction: column;
             align-items: center;
+            height: 100px;
+        }
+        .buttons {
+            padding: 15px;
         }
     }
 </style>

@@ -20,12 +20,15 @@ export default {
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
     .header-container {
         display: flex;
         flex-basis: 100%;
         align-items: center;
         height: 50px;
         padding-right: 25px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
         background: linear-gradient(to right, #F05C23, #8A3514);
         /* border: 2px solid black; */
     }
