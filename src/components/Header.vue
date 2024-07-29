@@ -23,12 +23,14 @@ export default {
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
     .header-container {
         display: flex;
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
         align-items: center;
         height: 50px;
         padding-right: 25px;
         font-family: 'Inter', sans-serif;
         font-size: 14px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         background: linear-gradient(to right, #F05C23, #8A3514);
         /* border: 2px solid black; */
     }
@@ -62,6 +64,8 @@ export default {
         .header-container {
             height: 70px;
             padding-right: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
         }
         .header-items {
             padding-top: 10px;

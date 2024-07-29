@@ -21,7 +21,7 @@
         <div class="text-content">
             <h1>Hi my name is,</h1>
             <h2>Motheen Baig</h2>
-            <h3>{{ displayedText }}‎ </h3>
+            <h3>#I build {{ displayedText }}‎ </h3>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis quisquam qui molesti</h4>
         </div>
     </div>
@@ -93,7 +93,7 @@ export default {
         flex-basis: 100%;
         height: 922px;
         background-image: url('../assets/hero-background.svg');
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
     .top-bar {
         display: flex;
@@ -109,6 +109,7 @@ export default {
         /* border: 2px solid black; */
     }
     .social-item {
+        display: flex;
         width: 50px;
         height: 50px;
     }
@@ -134,13 +135,17 @@ export default {
         width: 138px;
         height: 54px;
         border-radius: 15px;
+        font-size: 18px;
+        color: white;
         background-color: #FEB132;
         border: 1px solid #F05B23;
+        text-shadow: 0px 4px 8px #000000;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
     .button:hover {
         cursor: pointer;
         background-color: #f4c818;
+        border: 1px solid #ef4f14;
     }
     .text-content {
         display: flex;
@@ -167,7 +172,7 @@ export default {
     }
     h3 {
         font-size: 36px;
-        color: rgb(234, 225, 225);
+        color: rgb(14, 234, 61);
         text-shadow: 0px 4px 8px #000000;
         padding-bottom: 10px;
     }
