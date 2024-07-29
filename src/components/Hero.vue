@@ -84,6 +84,9 @@ export default {
 
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
+    * {
+        font-family: 'Inter', sans-serif;
+    }
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -183,16 +186,16 @@ export default {
             align-items: center;
         }
         h1 {
-            font-size: 20px;
+            font-size: 15px;
         }
         h2 {
-            font-size: 32px;
+            font-size: 25px;
         }
         h3 {
-            font-size: 32px;
+            font-size: 25px;
         }
         h4 {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 </style>
